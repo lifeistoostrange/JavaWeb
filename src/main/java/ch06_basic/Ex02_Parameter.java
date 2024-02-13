@@ -34,5 +34,5 @@ public class Ex02_Parameter extends HttpServlet {
 		String title = req.getParameter("title");
 		System.out.println("POST id: " + id + ", title : " + title);
 	}
-
+// hi
 }
