@@ -106,7 +106,7 @@ public class CityDao {
 
 	public void updateCity(City city) {
 		Connection conn = getConnection();
-		String sql = "update kcity set name=?, countryCode=?, district=?, population=? where id=?";
+		String sql = "update city set name=?, countryCode=?, district=?, population=? where id=?";
 		try {
 			PreparedStatement pstmt = conn.prepareStatement(sql);
 			pstmt.setString(1, city.getName());

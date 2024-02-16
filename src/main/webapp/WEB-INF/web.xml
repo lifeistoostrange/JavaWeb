@@ -129,4 +129,24 @@
     <servlet-name>Ex05_Updade</servlet-name>
     <url-pattern>/Ex05_Updade</url-pattern>
   </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>Kcitycontroller</display-name>
+    <servlet-name>Kcitycontroller</servlet-name>
+    <servlet-class>ch07_dao.kcity.Kcitycontroller</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Kcitycontroller</servlet-name>
+    <url-pattern>/Kcitycontroller</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>KcityController</display-name>
+    <servlet-name>KcityController</servlet-name>
+    <servlet-class>ch07_dao.kcity.KcityController</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>KcityController</servlet-name>
+    <url-pattern>/KcityController</url-pattern>
+  </servlet-mapping>
 </web-app>
