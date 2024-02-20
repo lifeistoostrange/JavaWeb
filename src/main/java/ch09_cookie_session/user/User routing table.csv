@@ -1,0 +1,24 @@
+Routing table,,,,,
+,,,,,
+"path
+(/jw/ch09 는 공통)",method,입력 파라메터,"Viewer
+다음 행선지",넘겨줄 파라메터,설  명
+/user/list,GET,page,list viewer,List<User> list,list.jsp
+/user/register,GET,,register viewer,,register.jsp
+,POST,"uid, pwd, pwd2, 
+uname, email",/user/list?page=1,,"session의
+currentUserPage"
+/user/login,GET,,login viewer,,
+,POST,"uid, pwd",/user/list?page=1,,"sessUid, sessUname
+등록"
+/user/logout,GET,,/user/list?page=1,,
+/user/update,GET,uid,update viewer,User user,update.jsp
+,POST,"uid, uname, email,
+pwd, pwd2",/user/list?page=1,,"pwd, pwd2가 null이
+아니면서 동일한 경우
+패스워드 변경함"
+/user/delete,GET,uid,/user/list?page=1,,
+,,,,,
+,,,,,
+,,,,,
+,,,,,

@@ -121,23 +121,13 @@
   </servlet-mapping>
   <servlet>
     <description></description>
-    <display-name>Ex05_Updade</display-name>
-    <servlet-name>Ex05_Updade</servlet-name>
-    <servlet-class>ch07_dao.Ex05_Updade</servlet-class>
+    <display-name>Ex05_Update</display-name>
+    <servlet-name>Ex05_Update</servlet-name>
+    <servlet-class>ch07_dao.Ex05_Update</servlet-class>
   </servlet>
   <servlet-mapping>
-    <servlet-name>Ex05_Updade</servlet-name>
-    <url-pattern>/Ex05_Updade</url-pattern>
-  </servlet-mapping>
-  <servlet>
-    <description></description>
-    <display-name>Kcitycontroller</display-name>
-    <servlet-name>Kcitycontroller</servlet-name>
-    <servlet-class>ch07_dao.kcity.Kcitycontroller</servlet-class>
-  </servlet>
-  <servlet-mapping>
-    <servlet-name>Kcitycontroller</servlet-name>
-    <url-pattern>/Kcitycontroller</url-pattern>
+    <servlet-name>Ex05_Update</servlet-name>
+    <url-pattern>/Ex05_Update</url-pattern>
   </servlet-mapping>
   <servlet>
     <description></description>
@@ -148,5 +138,24 @@
   <servlet-mapping>
     <servlet-name>KcityController</servlet-name>
     <url-pattern>/KcityController</url-pattern>
+  </servlet-mapping>
+  <filter>
+    <display-name>EncodingFilter</display-name>
+    <filter-name>EncodingFilter</filter-name>
+    <filter-class>ch10_filter.EncodingFilter</filter-class>
+  </filter>
+  <filter-mapping>
+    <filter-name>EncodingFilter</filter-name>
+    <url-pattern>/EncodingFilter</url-pattern>
+  </filter-mapping>
+  <servlet>
+    <description></description>
+    <display-name>FilterTest</display-name>
+    <servlet-name>FilterTest</servlet-name>
+    <servlet-class>ch10_filter.FilterTest</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>FilterTest</servlet-name>
+    <url-pattern>/FilterTest</url-pattern>
   </servlet-mapping>
 </web-app>
